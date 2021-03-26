@@ -1,0 +1,12 @@
+{
+  "extension.emeraldwalk.enableRunOnSave": true,
+  "emeraldwalk.runonsave": {
+    "autoClearConsole": true,
+    "commands": [
+      {
+        "match": ".*\\.mjs$",
+        "cmd": "cd ${workspaceFolder} && node tests/test.mjs && git commit -am working || git reset --hard"
+      }
+    ]
+  }
+}
